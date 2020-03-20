@@ -18,3 +18,8 @@ Two APIs
 Edamam API: https://developer.edamam.com/
 Youtube Search API: https://developers.google.com/youtube/v3/
 ```
+
+Front End Framework:
+```
+Semantic UI: https://semantic-ui.com/
+```
