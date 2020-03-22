@@ -4,8 +4,8 @@
 
 ```
 AS AN USER
-I WANT to find some cooking ideas and the instructions based on my avalibale ingredients and diet preference
-SO THAT I can cook meal with confident 
+I WANT to find some cooking ideas and the instructions based on my available ingredients and diet preference
+SO THAT I can cook meal with confidence 
 ```
 
 
