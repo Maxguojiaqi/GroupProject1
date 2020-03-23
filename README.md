@@ -1,5 +1,8 @@
 # GroupProject1
 
+User Story:
+![userstory](./project-1_user-story.png)
+
 Team Member:
 ```
 Member 1: Max Guo, Maxguojiaqi, https://github.com/Maxguojiaqi
