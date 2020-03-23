@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<header role="banner">
+		<h1><span>Master Home Cook</span></h1>
+	</header>
+	<main role="main" aria-live="polite">
+		<div class="search-controls">
+			<button type="button" id="search-again-button">Search Again</button>
+		</div>
+		<form role="form" action="#" class="js-search-form" id="js-search-form">
+			<div class="search-container">
+				<div class="row">
+					<div class="col-4">
+						<div>
+							<label for="ingredient-query" class="col-header">Ingredients</label>
+						</div>
+						<div>
+							<input type="text" name="ingredient-query" id="ingredient-query" class="js-query" placeholder="e.g. Egg, Chicken or Pancake">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<label class="col-header">Calories</label>
+					</div>
+					<div class="col-6">
+						<div>
+							<label for="calories-min">Min: </label>
+							<input type="number" name="calories-min" value="10" id="calories-min" step="10" min="10" max="9990" placeholder="Min. calories">
+						</div>
+					</div>
+					<div class="col-6">
+						<label for="calories-max">Max: </label>
+						<input type="number" name="calories-max" value="10000" id="calories-max" step="10" min="20" max="10000"
+						placeholder="Max calories">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="diet-menu" class="col-header">Diet Type</label>
+						<select id="diet-menu" name="Diet">
+							<option value="" disabled selected>Please Select</option>
+							<option value="balanced">balanced</option>
+							<option value="low-carb">low-carb</option>
+							<option value="low-fat">low-fat</option>
+							<option value="high-protein">high-protein</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<button type="submit" class="submit-button">Search</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<button type="button" id="clear-search-fields">&times; Clear All</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="results-view">
+			<div id="js-ingredient-results-title"></div>
+			<div class="js-edamam-results" id="js-edamam-ingredient-results"></div>
+		</div>
+	</div>
+</main>
+<footer role="contentinfo">
+	<p>
+		&copy;
+		<script type="text/javascript">
+			let today = new Date();
+			let year = today.getFullYear();
+			document.write(year);
+		</script>, Max, Sujatha, Josh
+	</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="js/config.js" type="text/javascript"></script>
+<script src="js/edamam.js" type="text/javascript"></script>
+</body>
+</html>
