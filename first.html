@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <style>
+/*     
+    html {
+        background-image: url('cooking-ingredients-with-avocado-mushrooms-eggs.jpg') !important;
+        background-size: cover !important;
+    }
+     */
+    </style>
 </head>
 <body>
-    <h1> First file
-    </h1>
+  <!-- <img src="https://carleton.ca/healthy-workplace/wp-content/uploads/healthy-food-clean-eating-selection-royalty-free-image-854725372-1538493619.jpg"> -->
+  <!-- <img class="ui fluid image" src="https://carleton.ca/healthy-workplace/wp-content/uploads/healthy-food-clean-eating-selection-royalty-free-image-854725372-1538493619.jpg"> -->
+    <div class="ui olive inverted segment">
+      <div class="ui center aligned header blue">
+        <h1 >Master Home Cook</h1>
+        
+      </div>
+    </div>
+
+    <!-- <div class="ui corner labeled input">
+      <input type="text" placeholder="Search...">
+      <div class="ui corner label">
+        <i class="asterisk icon"></i>
+      </div>
+    </div> -->
+    <div class="ui two column centered grid">
+      <div class="column">
+
+    <div class="ui form">
+      <div class="field">
+        <label>Ingredients</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Calories</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <label>Cook Time(mins)</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class = "field">
+      <label>Diet Type</label>
+      <div class="ui selection dropdown">
+          <input type="hidden" name="Diet Type">
+          <i class="dropdown icon"></i>
+          <div class="default text">Diet type</div>
+          <div class="menu">
+              <div class="item" data-value="1">Keto</div>
+              <div class="item" data-value="0">The paleo diet</div>
+              <div class="item" data-value="0">Vegan </div>
+              <div class="item" data-value="0">Plant-based diet</div>
+              <div class="item" data-value="0">Low-fat diet</div>
+              <div class="item" data-value="0">Plant-based diets</div>
+              <div class="item" data-value="0">WW (Weight Watchers)</div>
+              <div class="item" data-value="0">The Mediterranean diet</div>
+          </div>
+      </div>
+    </div>
+     <div class= "field">
+      <label>Cusine Type</label>
+      <div class="ui selection dropdown">
+          <input type="hidden" name="Diet Type">
+          <i class="dropdown icon"></i>
+          <div class="default text">Diet type</div>
+          <div class="menu">
+              <div class="item" data-value="1">Keto</div>
+              <div class="item" data-value="0"></div>
+              <div class="item" data-value="0">Vegan </div>
+              <div class="item" data-value="0">Plant-based diet</div>
+              <div class="item" data-value="0">Low-fat diet</div>
+              <div class="item" data-value="0">Plant-based diets</div>
+              <div class="item" data-value="0">WW (Weight Watchers)</div>
+              <div class="item" data-value="0">The Mediterranean diet</div>
+          </div>
+      </div>
+    </div>
+
+    <div class= "field">
+      <label>Meal Type</label>
+      <div class="ui selection dropdown">
+          <input type="hidden" name="Diet Type">
+          <i class="dropdown icon"></i>
+          <div class="default text">Diet type</div>
+          <div class="menu">
+              <div class="item" data-value="1">Keto</div>
+              <div class="item" data-value="0"></div>
+              <div class="item" data-value="0">Vegan </div>
+              <div class="item" data-value="0">Plant-based diet</div>
+              <div class="item" data-value="0">Low-fat diet</div>
+              <div class="item" data-value="0">Plant-based diets</div>
+              <div class="item" data-value="0">WW (Weight Watchers)</div>
+              <div class="item" data-value="0">The Mediterranean diet</div>
+          </div>
+      </div>
+    </div>
+
+    <div class= "field">
+      <label>Dish Type</label>
+      <div class="ui selection dropdown">
+          <input type="hidden" name="Diet Type">
+          <i class="dropdown icon"></i>
+          <div class="default text">Diet type</div>
+          <div class="menu">
+              <div class="item" data-value="1">Keto</div>
+              <div class="item" data-value="0"></div>
+              <div class="item" data-value="0">Vegan </div>
+              <div class="item" data-value="0">Plant-based diet</div>
+              <div class="item" data-value="0">Low-fat diet</div>
+              <div class="item" data-value="0">Plant-based diets</div>
+              <div class="item" data-value="0">WW (Weight Watchers)</div>
+              <div class="item" data-value="0">The Mediterranean diet</div>
+          </div>
+      </div>
+    </div>
+      <button class="ui button" type="submit">Search</button>
+    </form>
+      </div>
+  </div>
+</div>
+
+
+    
+
+    
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script>
+  $('select.dropdown')
+  .dropdown()
+;
+</script>
 </body>
 </html>
+
