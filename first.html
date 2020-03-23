@@ -7,19 +7,22 @@
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <style>
-/*     
-    html {
-        background-image: url('cooking-ingredients-with-avocado-mushrooms-eggs.jpg') !important;
+    
+    body{
+        background-image: url('./cooking-ingredients-with-avocado-mushrooms-eggs.jpg') !important;
         background-size: cover !important;
     }
-     */
+    .large{
+            font-size: 20px;
+         }
+    
     </style>
 </head>
 <body>
   <!-- <img src="https://carleton.ca/healthy-workplace/wp-content/uploads/healthy-food-clean-eating-selection-royalty-free-image-854725372-1538493619.jpg"> -->
   <!-- <img class="ui fluid image" src="https://carleton.ca/healthy-workplace/wp-content/uploads/healthy-food-clean-eating-selection-royalty-free-image-854725372-1538493619.jpg"> -->
     <div class="ui olive inverted segment">
-      <div class="ui center aligned header blue">
+      <div class="ui center aligned header ">
         <h1 >Master Home Cook</h1>
         
       </div>
@@ -31,21 +34,22 @@
         <i class="asterisk icon"></i>
       </div>
     </div> -->
+    <!-- <div class="ui internally celled grid"> -->
     <div class="ui two column centered grid">
       <div class="column">
 
     <div class="ui form">
       <div class="field">
-        <label>Ingredients</label>
-        <input type="text" name="first-name" placeholder="First Name">
+        <label >Ingredients</label>
+        <input type="text" name="first-name" placeholder="Ingredients">
       </div>
       <div class="field">
         <label>Calories</label>
-        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="last-name" placeholder="Calories">
       </div>
       <div class="field">
         <label>Cook Time(mins)</label>
-        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="last-name" placeholder="Cook time">
       </div>
       <div class = "field">
       <label>Diet Type</label>
@@ -70,16 +74,16 @@
       <div class="ui selection dropdown">
           <input type="hidden" name="Diet Type">
           <i class="dropdown icon"></i>
-          <div class="default text">Diet type</div>
+          <div class="default text">Cusine type</div>
           <div class="menu">
-              <div class="item" data-value="1">Keto</div>
-              <div class="item" data-value="0"></div>
-              <div class="item" data-value="0">Vegan </div>
-              <div class="item" data-value="0">Plant-based diet</div>
-              <div class="item" data-value="0">Low-fat diet</div>
-              <div class="item" data-value="0">Plant-based diets</div>
-              <div class="item" data-value="0">WW (Weight Watchers)</div>
-              <div class="item" data-value="0">The Mediterranean diet</div>
+              <div class="item" data-value="1">Indian</div>
+              <div class="item" data-value="0">Italian</div>
+              <div class="item" data-value="0">Greek </div>
+              <div class="item" data-value="0">Chinese</div>
+              <div class="item" data-value="0">French</div>
+              <div class="item" data-value="0">Caribbean</div>
+              <div class="item" data-value="0">American</div>
+              <div class="item" data-value="0">British</div>
           </div>
       </div>
     </div>
@@ -89,16 +93,15 @@
       <div class="ui selection dropdown">
           <input type="hidden" name="Diet Type">
           <i class="dropdown icon"></i>
-          <div class="default text">Diet type</div>
+          <div class="default text">Meal type</div>
           <div class="menu">
-              <div class="item" data-value="1">Keto</div>
-              <div class="item" data-value="0"></div>
-              <div class="item" data-value="0">Vegan </div>
-              <div class="item" data-value="0">Plant-based diet</div>
-              <div class="item" data-value="0">Low-fat diet</div>
-              <div class="item" data-value="0">Plant-based diets</div>
-              <div class="item" data-value="0">WW (Weight Watchers)</div>
-              <div class="item" data-value="0">The Mediterranean diet</div>
+              <div class="item" data-value="1">breakfast</div>
+              <div class="item" data-value="0">brunch</div>
+              <div class="item" data-value="0">elevenses</div>
+              <div class="item" data-value="0">lunch </div>
+              <div class="item" data-value="0">tea</div>
+              <div class="item" data-value="0">supper</div>
+              <div class="item" data-value="0">dinner</div>   
           </div>
       </div>
     </div>
@@ -108,20 +111,22 @@
       <div class="ui selection dropdown">
           <input type="hidden" name="Diet Type">
           <i class="dropdown icon"></i>
-          <div class="default text">Diet type</div>
+          <div class="default text">Dish type</div>
           <div class="menu">
-              <div class="item" data-value="1">Keto</div>
-              <div class="item" data-value="0"></div>
-              <div class="item" data-value="0">Vegan </div>
-              <div class="item" data-value="0">Plant-based diet</div>
-              <div class="item" data-value="0">Low-fat diet</div>
-              <div class="item" data-value="0">Plant-based diets</div>
-              <div class="item" data-value="0">WW (Weight Watchers)</div>
-              <div class="item" data-value="0">The Mediterranean diet</div>
+              <div class="item" data-value="1">Pasta & risotto</div>
+              <div class="item" data-value="0">Salad</div>
+              <div class="item" data-value="0">Bread & doughs </div>
+              <div class="item" data-value="0">Curry</div>
+              <div class="item" data-value="0">Vegetable sides</div>
+              <div class="item" data-value="0">Soup</div>
+              <div class="item" data-value="0">Antipasti</div>
+              <div class="item" data-value="0">Roast</div>
           </div>
       </div>
     </div>
-      <button class="ui button" type="submit">Search</button>
+    
+      <button class="fluid ui olive button"  type="submit">Search</button>
+   
     </form>
       </div>
   </div>
@@ -136,7 +141,7 @@
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
 <script>
-  $('select.dropdown')
+  $('.selection.dropdown')
   .dropdown()
 ;
 </script>
