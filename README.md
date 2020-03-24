@@ -1,12 +1,8 @@
 # GroupProject1
 
-### Simple User Story
 
-```
-AS AN USER
-I WANT to find some cooking ideas and the instructions based on my available ingredients and diet preference
-SO THAT I can cook meal with confidence 
-```
+User Story:
+![userstory](./project-1_user-story.png)
 
 
 Team Member:
