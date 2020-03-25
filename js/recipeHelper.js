@@ -70,6 +70,10 @@ function domRestruct(recipeList){
             ingredientItem.innerText = Ingredient
             dishIngredients.appendChild(ingredientItem);
         });
+        let selectButton = document.createElement("BUTTON");
+        let text = document.createTextNode("Select");
+        selectButton.appendChild(text);
+        dishContent.appendChild(selectButton)
         mainContent.appendChild(dishContent)
     });
 
