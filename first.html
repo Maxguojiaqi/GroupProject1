@@ -1,108 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Master Home Cook</title>
-    <link rel="stylesheet" type="text/css" href="./utilities/Semantic/semantic.min.css">
-    <style>
-    
-    body{
-        background-image: url('./kitchenDark.jpg') !important;
-        background-size: cover !important;
-    }
-    .large{
-            font-size: 20px;
-         }
-    
-    </style>
+  <meta charset="UTF-8">
+  <title>Master Home Cook</title>
+  <link rel="stylesheet" type="text/css" href="./utilities/Semantic/semantic.min.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
-<div class="ui olive inverted segment">
-  <div class="ui center aligned header ">
-    <h1 class="ui header white inverted header">Master Home Cook</h1>
+  <div class="ui olive inverted segment">
+    <div class="ui center aligned header ">
+      <h1 class="ui huge header white inverted header"><strong><i class="fas fa-glass-cheers"></i> Master Home Cook<i class="utensils icon"></i></strong></h1>
+    </div>
   </div>
-</div>
-<div class="ui three column centered grid" id="mainContent">
+  
+  <div class="ui three column centered grid" id="mainContent">
     <div class="two column row">
       <div class="column">
         <div class="ui form">
           <div class="field">
-            <h3 class="ui header grey inverted header">Ingredients</h3>
-            <input type="text" id="ingredients" placeholder="Ingredients">
+            <label><h3 class="ui header white inverted header">Ingredients</h3></label>
+            
+            <input type="text" id="ingredients" placeholder="chicken, eggs,">
+          
           </div>
           <div class="field">
-            <h3 class="ui header grey inverted header">Calories</h3>
-            <input type="text" id="calories" placeholder="Calories">
+            <lable><h3 class="ui header white inverted header">Calories</h3></lable>
+            <input class="color" type="text" id="calories"  placeholder="100cal, 200cal">
           </div>
           <div class="field">
-            <h3 class="ui header grey inverted header">Cook Time(mins)</h3>
-            <input type="text" id="cookTime" placeholder="Cook time">
+            <label><h3 class="ui header white inverted header">Cook Time(mins)</h3></label>
+            <input type="text" id="cookTime" placeholder="20mins, 30mins">
           </div>
-          <div class = "field">
-          <h3 class="ui header grey inverted header">Diet Type</h3>
-          <select class="ui dropdown" id="dietType">
-            <option value="">Diet type</option>
-            <option value="balanced">Balanced</option>
-            <option value="high-fiber">High Fiber</option>
-            <option value="high-protein">High Protein</option>
-            <option value="low-carb">Low Carb</option>
-            <option value="low-fat">Low-Fat</option>
-            <option value="low-sodium">Low-Sodium</option>
-          </select>
+          <div class="field">
+          <label><h3 class="ui header white inverted header">Diet Type</h3></label>
+            <select class="ui dropdown" id="dietType">
+              <option value="">High Fiber, Low carb</option>
+              <option value="balanced">Balanced</option>
+              <option value="high-fiber">High Fiber</option>
+              <option value="high-protein">High Protein</option>
+              <option value="low-carb">Low Carb</option>
+              <option value="low-fat">Low-Fat</option>
+              <option value="low-sodium">Low-Sodium</option>
+            </select>
+          </div>
+          <div class="field">
+          <label><h3 class="ui header  white inverted header">Cusine Type</h3></label>
+            <select class="ui dropdown" id="cusineType">
+              <option value="">Italian, chinese</option>
+              <option value="American">American</option>
+              <option value="British">British</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Chinese">Chinese</option>
+              <option value="French">French</option>
+              <option value="greek">Greek</option>
+              <option value="indian">Indian</option>
+              <option value="italian">Italian</option>
+            </select>
+          </div>
+          <div class="field">
+          <label><h3 class="ui header  white inverted header">Meal Type</h3></label>
+            <select class="ui dropdown" id="mealType">
+              <option value="">Breakfast, Lunch</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Snack">Snack</option>
+            </select>
+          </div>
+          <div class="field">
+          <label><h3 class="ui header  white inverted header">Dish Type</h3></label>
+            <select class="ui dropdown" id="dishType">
+              <option value="">Dessert, Main course</option>
+              <option value="Bread">Bread</option>
+              <option value="Cereals">Cereals</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Desserts">Desserts</option>
+              <option value="Main course">Main course</option>
+              <option value="Salad">Salad</option>
+              <option value="Sandwiches">Sandwiches</option>
+              <option value="Soup">Soup</option>
+            </select>
+          </div>
+          <button class="fluid ui olive button" id="searchBtn">Search</button>
         </div>
-          <div class= "field">
-          <h3 class="ui header grey inverted header">Cusine Type</h3>
-          <select class="ui dropdown" id="cusineType">
-            <option value="">Cusine type</option>
-            <option value="American">American</option>
-            <option value="British">British</option>
-            <option value="Caribbean">Caribbean</option>
-            <option value="Chinese">Chinese</option>
-            <option value="French">French</option>
-            <option value="greek">Greek</option>
-            <option value="indian">Indian</option>
-            <option value="italian">Italian</option>
-          </select>
-        </div>
-        <div class= "field">
-          <h3 class="ui header grey inverted header">Meal Type</h3>
-          <select class="ui dropdown" id="mealType">
-            <option value="">Meal type</option>
-            <option value="Breakfast">Breakfast</option>
-            <option value="Lunch">Lunch</option>
-            <option value="Dinner">Dinner</option>
-            <option value="Snack">Snack</option>
-          </select>
-        </div>
-        <div class= "field">
-          <h3 class="ui header grey inverted header">Dish Type</h3>
-          <select class="ui dropdown" id="dishType">
-            <option value="">Dish Type</option>
-            <option value="Bread">Bread</option>
-            <option value="Cereals">Cereals</option>
-            <option value="Drinks">Drinks</option>
-            <option value="Desserts">Desserts</option>
-            <option value="Main course">Main course</option>
-            <option value="Salad">Salad</option>
-            <option value="Sandwiches">Sandwiches</option>
-            <option value="Soup">Soup</option>
-          </select>
-        </div>
-        <button class="fluid ui olive button" id="searchBtn">Search</button>
       </div>
     </div>
   </div>
-</div>
-    
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-<script src="./utilities/Semantic/semantic.min.js"></script>
-<script src="./js/recipeHelper.js"></script>
-<script>
-  
-$('.ui.dropdown')
-  .dropdown()
-;
-</script>
-</body>
-</html>
 
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./utilities/Semantic/semantic.min.js"></script>
+  <script src="./js/recipeHelper.js"></script>
+  <script>
+    $('.ui.dropdown')
+      .dropdown();
+  </script>
+</body>
+
+</html>
