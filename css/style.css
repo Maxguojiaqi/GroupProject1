@@ -1,0 +1,22 @@
+/* body{
+    background-image: url('../kitchenDark.jpg') !important;
+    background-size: cover !important;     
+} */
+
+body{
+    background-image: url('../organic-food-healthy.jpg') !important;
+    background-size: cover !important;       
+}   
+
+h1{
+    padding:2rem;
+}
+
+/* .header{
+
+   padding : 20px;
+} */
+/* .ui input {
+    
+    background-color: grey;
+  } */
