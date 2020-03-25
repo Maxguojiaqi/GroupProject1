@@ -8,6 +8,11 @@ const edamamRecipesPerPage = 3;
 let edamamMinIngredientRecipeNum = 0;
 let edamamMaxIngredientRecipeNum = edamamRecipesPerPage;
 
+let dishTypeNode = document.getElementById("dishType");
+let dishTypeVal = dishType.options[dishType.selectedIndex].value;
+console.log(dishTypeVal)
+
+
 // Store the entire data for each meal from Edamam server here
 let edamamIngredientData;
 
@@ -18,7 +23,7 @@ const defaultMaxCalories = 10000;
 function searchAgainButtonClick() {
 	$('#search-again-button').click(function(event) {
 		$('#search-again-button').hide();
-		$('.search-container').slideDown("slow");		
+		$('.search-container').slideDown("slow");
 	});
 }
 
