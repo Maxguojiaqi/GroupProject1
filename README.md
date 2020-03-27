@@ -88,14 +88,13 @@ Youtube Search API: https://developers.google.com/youtube/v3/
 Semantic UI: https://semantic-ui.com/
 ```
 **BasicWireFrame**:
-```
+
 ![wireframe](./utilities/wireframe.jpg)
-```
+
 **The following images demonstrate the application functionality:**
-```
+
 ![Entry page with Input](./utilities/images/2.userinput.png)
 
 ![Shows the options](./utilities/images/3.showstheoptions.png)
 
 ![Video playing](./utilities/images/5.video.png)
-```
