@@ -2,15 +2,17 @@
 
 # Title: Master Home Cook
 ```
+
 User Story:
-````
-As a diet conscious user,
+
+```
+### As a diet conscious user,
 
 I want to be able to get recipe information and video for an ingredient that am intrested in.
 
 So that I can be aware of the calories and cooking methodology for that ingredient.
 
-Acceptance criteria:
+### Acceptance criteria:
 
 I should have an option to enter any ingredient in the ingredients input section.
 I should also be able to select the diet type, meal type from the respective menus.
@@ -19,6 +21,7 @@ When I select one of the video choice it should play the you tube video.
 ```
 
 Team Members:
+
 ```
 Member 1: Max Guo, Maxguojiaqi, https://github.com/Maxguojiaqi
 Member 2: Josh Babu George, joshb4u, https://github.com/joshb4u/
@@ -27,6 +30,7 @@ Member 3: Sujatha Mallela, sujatha-m, https://github.com/sujatha-m/
 
 High Level Description:
 
+```
 ## Server-Side APIs: Master Home Cook
 
 ### Motivation
@@ -49,7 +53,7 @@ Master Home Cook suggests top 3 recipes based on user input preference.Then,depe
 * Edamam API
 * GitHub
 
-## INSTRUCTIONS:
+### INSTRUCTIONS:
 Enter the ingredients, calories,cook time, diet type and meal type and then click on search button.
 User will be provided top three recipes with cooking instructions. 
 
@@ -58,7 +62,7 @@ user could also select other recipe choices to see corresponding video playback 
 
 Once done with video, user can refresh the page to go back to homepage.
 
-## Functionality
+### Functionality
 The application has been designed based on the following criteria:-
 
 When the user enters Ingredients, calories, cook time, diet type and meal type in the input form and clicks on the search button, the backend javascript function uses the ingredient to make a request to Edamam API to fetch the data consisting of ingredients, diet type, and meal type.
@@ -66,7 +70,7 @@ When the user enters Ingredients, calories, cook time, diet type and meal type i
 It also makes a request to Edamam API & You tube API to fetch the  data consisting of user
 
 User has to enter all choices are mandatory to search for an optimal dish.
-````
+```
 
 Two APIs
 
@@ -86,10 +90,12 @@ BasicWireFrame
 ```
 
 The following images demonstrate the application functionality:
-````
-![Entry page](./utilities/images/1.homepage.png)
-![User Input](./utilities/images/2.userinput.png)
+
+
+![Entry page with Input](./utilities/images/2.userinput.png)
+
 ![Shows the options](./utilities/images/3.showstheoptions.png)
-![Play video](./utilities/images/4.playthevideo.png)
-![Shows the options](./utilities/images/5.video.png)
-![Back to Homepage](./utilities/images/6.backtohomepage.png)
+
+![Video playing](./utilities/images/5.video.png)
+
+```
