@@ -1,8 +1,22 @@
 # GroupProject1
 
+# Title: Master Home Cook
+```
+## User Story:
 
-User Story:
-![userstory](./project-1_user-story.png)
+As a diet conscious user,
+
+I want to be able to get recipe information and video for an ingredient that am intrested in.
+
+So that I can be aware of the calories and cooking methodology for that ingredient.
+
+## Acceptance criteria:
+
+I should have an option to enter any ingredient in the ingredients input section.
+I should also be able to select the diet type, meal type from the respective menus.
+I am provided with at least three choices of videos for the recipes along with calories and cooking time(in minutes) information.
+When I select one of the video choice it should play the you tube video.
+```
 
 
 Team Member:
