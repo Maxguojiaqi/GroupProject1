@@ -9,22 +9,31 @@ document.getElementById('searchBtn').addEventListener('click',function()
     let caloriesNode = document.getElementById("calories");
     let cookTimeNode = document.getElementById("cookTime");
     let dietTypeeNode = document.getElementById("dietType");
-    let cusineTypeNode = document.getElementById("cusineType");
     let mealTypeNode = document.getElementById("mealType");
-    let dishTypeNode = document.getElementById("dishType");
-
 
     let ingredientsVal = ingredientsNode.value
     let caloriesVal = caloriesNode.value
     let cookTimeVal = cookTimeNode.value
     let dietTypeVal = dietTypeeNode.options[dietTypeeNode.selectedIndex].value;
-    let cusineTypeVal = cusineTypeNode.options[cusineTypeNode.selectedIndex].value;
     let mealTypeVal = mealTypeNode.options[mealTypeNode.selectedIndex].value;
-    let dishTypeVal = dishTypeNode.options[dishTypeNode.selectedIndex].value;
 
-    let URL = `https://api.edamam.com/search?q=${ingredientsVal}&app_id=1ffa7877&app_key=210e1a7abe5f717b7fb3420dc46866d9&from=0&to=3&time=${cookTimeVal}&diet=${dietTypeVal}&calories=${caloriesVal}&cusine=${cusineTypeVal}&meal=${mealTypeVal}&dish=${dishTypeVal}`                     
-    
-    fetch(URL)
+    dishInfoArray = [ingredientsVal,caloriesVal,cookTimeVal,dietTypeVal,mealTypeVal]
+
+    function checkNullVal(val){
+        return val === ''
+    }
+
+    if (dishInfoArray.some(checkNullVal))
+    {
+        $('.ui.basic.modal')
+        .modal('show');  
+    }
+
+    else
+    {
+        let URL = `https://api.edamam.com/search?q=${ingredientsVal}&app_id=9f876c04&app_key=190b06b9613e95cc66922c0f29cf9429&from=0&to=3&time=${cookTimeVal}&diet=${dietTypeVal}&calories=${caloriesVal}&meal=${mealTypeVal}`                     
+        
+        fetch(URL)
         .then((response) => {
             return response.json();
         })
@@ -44,19 +53,51 @@ document.getElementById('searchBtn').addEventListener('click',function()
         }).catch(error=>{
             console.log(error);
         });
+    }
 
 })
 
 
+function domFetchVideo(el){
+
+    let searchKeyWord = el.target.getAttribute('data-value')
+    fetch(`https://videosearch.cognitiveservices.azure.com/bing/v7.0/videos/search?q=${searchKeyWord}&count=1&offset=0&mkt=en-us&safeSearch=Moderate`, {
+        headers: {
+            "Ocp-Apim-Subscription-Key":"735862a6625b4c65a7fd0c551d621543"
+        }
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+            let newDocument = new DOMParser().parseFromString(data.value[0].embedHtml, 'text/html')
+            let urlSource = newDocument.getElementsByTagName('iframe')[0].src
+            console.log(urlSource)
+
+            let videoIframeHTML = `<iframe id="videoContent" width ="1000" height="600" src='${urlSource}' class="column"></iframe>`
+            document.getElementById('videoContentParent').innerHTML += videoIframeHTML
+            
+            document.getElementById("videoContentParent").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+                });
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+
+
+
+}
+
 function domRestruct(recipeList){
 
     mainContent.innerHTML = '';
-    // let dishContent = document.createElement('div');
     console.log(recipeList);
     recipeList.forEach(element => {
         let dishContent = document.createElement('div');
         dishContent.setAttribute('class','center aligned column')
-        dishContent.setAttribute('style','background-color: rgba(255, 255, 255, 0.68);')
+        dishContent.setAttribute('style','background-color: rgba(255, 255, 255, 0.68); border: double; height:550px')
         let dishName = document.createElement('h4')
         dishName.innerText = element.mealName
         dishContent.appendChild(dishName);
@@ -64,17 +105,30 @@ function domRestruct(recipeList){
         dishImage.setAttribute('src',element.mealImageURL)
         dishContent.appendChild(dishImage);
         let dishIngredients = document.createElement('ul')
+        dishIngredients.setAttribute('style','height:20%; overflow-y:scroll;')
         dishContent.appendChild(dishIngredients)
         element.mealFullIngredients.forEach(Ingredient => {
             let ingredientItem = document.createElement('li')
             ingredientItem.innerText = Ingredient
             dishIngredients.appendChild(ingredientItem);
         });
-        let selectButton = document.createElement("BUTTON");
-        let text = document.createTextNode("Select");
-        selectButton.appendChild(text);
+        let selectButton = document.createElement("button");
+        selectButton.innerText = "Select";
+        selectButton.setAttribute('class','ui primary button');
+        selectButton.setAttribute('data-value',element.mealName)
         dishContent.appendChild(selectButton)
-        mainContent.appendChild(dishContent)
+        mainContent.appendChild(dishContent) 
+
+        selectButton.addEventListener('click', function(e){
+            console.log(e.target)
+
+            // clean up the video parent div before
+            let videoParent = document.getElementById("videoContentParent");
+            videoParent.innerHTML =''
+
+            domFetchVideo(e);
+
+        });
     });
 
 }

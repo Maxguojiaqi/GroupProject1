@@ -1,22 +1,28 @@
-/* body{
-    background-image: url('../kitchenDark.jpg') !important;
-    background-size: cover !important;     
-} */
 
 body{
-    background-image: url('../organic-food-healthy.jpg') !important;
-    background-size: cover !important;       
+    background-image: url('../utilities/organic-food-healthy.jpg') !important;
+    background-size: cover !important;     
 }   
 
 h1{
     padding:2rem;
 }
 
-/* .header{
-
-   padding : 20px;
-} */
-/* .ui input {
+#mainContent{
     
-    background-color: grey;
-  } */
+    padding: 1.5em;
+}
+
+h3
+{
+    margin-top: 0.5em !important;
+}
+
+.field{
+    border-top: double white;
+}
+
+#dishSelector{
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.8);
+}
