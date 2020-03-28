@@ -102,4 +102,4 @@ Semantic UI: https://semantic-ui.com/
 
 **Project Presentation Slides**:
 
-{google_docs}https://docs.google.com/presentation/d/1lmEFuBThleAO5sTXW21FcoUpw-99Cs93W1NOZrfMYSA/edit?usp=sharing{/google_docs}
+{<iframe src='https://docs.google.com/presentation/d/1lmEFuBThleAO5sTXW21FcoUpw-99Cs93W1NOZrfMYSA/edit#slide=id.g722b068323_0_1976' width='100%' height='600px' frameborder='0'>
