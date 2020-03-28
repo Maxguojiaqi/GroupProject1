@@ -46,7 +46,6 @@ recipe selected, Master Home Cook plays the youtube video.
 
 ### Technologies Used
 
-* Materialize CSS
 * Semantic UI
 * CSS
 * HTML
@@ -81,7 +80,7 @@ make a request to
 ```
 Edamam API: https://developer.edamam.com/
 
-Youtube Search API: https://developers.google.com/youtube/v3/
+Youtube Search API: https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/
 ```
 **Front End Framework**:
 ```
