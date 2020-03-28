@@ -100,6 +100,6 @@ Semantic UI: https://semantic-ui.com/
 
 ![Video playing](./utilities/images/5.video.png)
 
-**Project Presentation Slides**:
+**Project Presentation Slides URL**:
 
-{<iframe src='https://docs.google.com/presentation/d/1lmEFuBThleAO5sTXW21FcoUpw-99Cs93W1NOZrfMYSA/edit#slide=id.g722b068323_0_1976' width='100%' height='600px' frameborder='0'>
+https://docs.google.com/presentation/d/1lmEFuBThleAO5sTXW21FcoUpw-99Cs93W1NOZrfMYSA/edit?usp=sharing
