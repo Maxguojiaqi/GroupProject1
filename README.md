@@ -3,10 +3,12 @@
 # Title: Master Home Cook
 **User Story**:
 ```
-As a diet conscious user,
+AS A user
 
-I want to be able to get recipe information and video for an ingredient that am interested in.
-So that I can be aware of the calories and cooking methodology for that ingredient.
+I WANT to be able to get recipe information and video for an ingredient that am interested in
+
+SO THAT I can be aware of the calories and cooking methodology for that ingredient.
+
 
 ### Acceptance criteria
 
@@ -97,3 +99,7 @@ Semantic UI: https://semantic-ui.com/
 ![Shows the options](./utilities/images/3.showstheoptions.png)
 
 ![Video playing](./utilities/images/5.video.png)
+
+**Project Presentation Slides URL**:
+
+https://docs.google.com/presentation/d/1lmEFuBThleAO5sTXW21FcoUpw-99Cs93W1NOZrfMYSA/edit?usp=sharing
